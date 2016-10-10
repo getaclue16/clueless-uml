@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_ZaFAQI8kEeaTqLu3B-kBVA" name="CluelessRootElement" URI="">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_qvsEYI8oEeaTqLu3B-kBVA">
+    <importedPackage xmi:type="uml:Profile" href="pathmap://PapyrusJava_PROFILES/PapyrusJava.profile.uml#_j9REUByGEduN1bTiWJ0lyw"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_O9UmII8nEeaTqLu3B-kBVA" name="Card" isAbstract="true">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Zx8mUI8nEeaTqLu3B-kBVA" name="name" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_gTG7UI8pEeaTqLu3B-kBVA" name="Solution">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_xl-xUI8pEeaTqLu3B-kBVA" name="guest" visibility="private" type="_JyrJYI8rEeaTqLu3B-kBVA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_1Hbe0I8pEeaTqLu3B-kBVA" name="weapon" visibility="private" type="_LVeY4I8rEeaTqLu3B-kBVA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_1e7Y0I8pEeaTqLu3B-kBVA" name="room" visibility="private" type="_7ouzMI8qEeaTqLu3B-kBVA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_L7aM8I8qEeaTqLu3B-kBVA" name="Location" isAbstract="true">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_N5JE8I8qEeaTqLu3B-kBVA" name="gridX" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_TeeVwI8qEeaTqLu3B-kBVA" name="gridY" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_7ouzMI8qEeaTqLu3B-kBVA" name="Room">
+    <generalization xmi:type="uml:Generalization" xmi:id="_BgeCoI8rEeaTqLu3B-kBVA" general="_O9UmII8nEeaTqLu3B-kBVA"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="_E2imkI8rEeaTqLu3B-kBVA" general="_L7aM8I8qEeaTqLu3B-kBVA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_RsoIMI8rEeaTqLu3B-kBVA" name="shortcut" visibility="private" type="_7ouzMI8qEeaTqLu3B-kBVA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YTUvYI8rEeaTqLu3B-kBVA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YTegYI8rEeaTqLu3B-kBVA" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_JyrJYI8rEeaTqLu3B-kBVA" name="Guest">
+    <generalization xmi:type="uml:Generalization" xmi:id="_cYa8gI8rEeaTqLu3B-kBVA" general="_O9UmII8nEeaTqLu3B-kBVA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_xqcIoI8rEeaTqLu3B-kBVA" name="startingHall" visibility="private" type="_gAWFcI8rEeaTqLu3B-kBVA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_LVeY4I8rEeaTqLu3B-kBVA" name="Weapon">
+    <generalization xmi:type="uml:Generalization" xmi:id="_c2SkQI8rEeaTqLu3B-kBVA" general="_O9UmII8nEeaTqLu3B-kBVA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_gAWFcI8rEeaTqLu3B-kBVA" name="Hall">
+    <generalization xmi:type="uml:Generalization" xmi:id="_u3NzEI8rEeaTqLu3B-kBVA" general="_L7aM8I8qEeaTqLu3B-kBVA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_PGJjQI8tEeaTqLu3B-kBVA" name="Player">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_PGJjQY8tEeaTqLu3B-kBVA" name="user" visibility="private" type="_ir4zwI8tEeaTqLu3B-kBVA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_PGJjQo8tEeaTqLu3B-kBVA" name="guest" visibility="private" type="_JyrJYI8rEeaTqLu3B-kBVA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_PGJjQ48tEeaTqLu3B-kBVA" name="cards" visibility="private" type="_O9UmII8nEeaTqLu3B-kBVA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZhEC8I8tEeaTqLu3B-kBVA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZhEC8Y8tEeaTqLu3B-kBVA" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_PGJjRI8tEeaTqLu3B-kBVA" name="currentLocation" visibility="private" type="_L7aM8I8qEeaTqLu3B-kBVA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_PGJjRY8tEeaTqLu3B-kBVA" name="forcedToMove" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_PGJjRo8tEeaTqLu3B-kBVA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_PGJjR48tEeaTqLu3B-kBVA" name="failedAccusation" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_PGJjSI8tEeaTqLu3B-kBVA"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ir4zwI8tEeaTqLu3B-kBVA" name="User">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_kdOOgI8tEeaTqLu3B-kBVA" name="username" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_l85RgI8tEeaTqLu3B-kBVA" name="password" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_x9_r4I8tEeaTqLu3B-kBVA" name="Game" visibility="public">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_TeS8UI86EeaTqLu3B-kBVA" name="uuid" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_yLWggo8vEeaTqLu3B-kBVA" name="player" type="_PGJjQI8tEeaTqLu3B-kBVA" aggregation="shared" association="_yLV5cI8vEeaTqLu3B-kBVA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3Tk-kI8vEeaTqLu3B-kBVA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3Tp3EI8vEeaTqLu3B-kBVA" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_3egHEI8tEeaTqLu3B-kBVA" name="solution" visibility="private" type="_gTG7UI8pEeaTqLu3B-kBVA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_31jVII8tEeaTqLu3B-kBVA" name="turnNumber" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_TRcpkI8uEeaTqLu3B-kBVA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_xCqPkI8uEeaTqLu3B-kBVA" name="action" type="_ntiTQI8uEeaTqLu3B-kBVA" aggregation="shared" association="_xChFoI8uEeaTqLu3B-kBVA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Gaa3UI8vEeaTqLu3B-kBVA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GbAtMI8vEeaTqLu3B-kBVA" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_UIZNwI8wEeaTqLu3B-kBVA" name="activePlayer" visibility="private" type="_PGJjQI8tEeaTqLu3B-kBVA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XLaS0I8wEeaTqLu3B-kBVA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XLekQI8wEeaTqLu3B-kBVA" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ntiTQI8uEeaTqLu3B-kBVA" name="Action">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_rKF5sI8uEeaTqLu3B-kBVA" name="turnNumber" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_xg28kI8wEeaTqLu3B-kBVA" name="player" visibility="private" type="_PGJjQI8tEeaTqLu3B-kBVA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Q7M_YI84EeaTqLu3B-kBVA" name="timestamp" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_xChFoI8uEeaTqLu3B-kBVA" memberEnd="_xCqPkI8uEeaTqLu3B-kBVA _xCqPkY8uEeaTqLu3B-kBVA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xChFoY8uEeaTqLu3B-kBVA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_xChFoo8uEeaTqLu3B-kBVA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_xCqPkY8uEeaTqLu3B-kBVA" name="game" type="_x9_r4I8tEeaTqLu3B-kBVA" association="_xChFoI8uEeaTqLu3B-kBVA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_yLV5cI8vEeaTqLu3B-kBVA" memberEnd="_yLWggo8vEeaTqLu3B-kBVA _yLXHkI8vEeaTqLu3B-kBVA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_yLWggI8vEeaTqLu3B-kBVA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_yLWggY8vEeaTqLu3B-kBVA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_yLXHkI8vEeaTqLu3B-kBVA" name="game" type="_x9_r4I8tEeaTqLu3B-kBVA" association="_yLV5cI8vEeaTqLu3B-kBVA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_k-RlwI8wEeaTqLu3B-kBVA" name="Move">
+    <generalization xmi:type="uml:Generalization" xmi:id="_4LqnsI8wEeaTqLu3B-kBVA" general="_ntiTQI8uEeaTqLu3B-kBVA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_-g_yEI8wEeaTqLu3B-kBVA" name="from" visibility="private" type="_L7aM8I8qEeaTqLu3B-kBVA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="__VSVwI8wEeaTqLu3B-kBVA" name="to" visibility="private" type="_L7aM8I8qEeaTqLu3B-kBVA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_nagXoI8wEeaTqLu3B-kBVA" name="Guess">
+    <generalization xmi:type="uml:Generalization" xmi:id="_5WI2wI8wEeaTqLu3B-kBVA" general="_ntiTQI8uEeaTqLu3B-kBVA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4wg9AI83EeaTqLu3B-kBVA" name="solution" visibility="private" type="_gTG7UI8pEeaTqLu3B-kBVA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_o_HlAI8wEeaTqLu3B-kBVA" name="Accuse">
+    <generalization xmi:type="uml:Generalization" xmi:id="_5uXJgI8wEeaTqLu3B-kBVA" general="_ntiTQI8uEeaTqLu3B-kBVA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_93rrII83EeaTqLu3B-kBVA" name="solution" visibility="private" type="_gTG7UI8pEeaTqLu3B-kBVA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_qyC7MI8wEeaTqLu3B-kBVA" name="Respond">
+    <generalization xmi:type="uml:Generalization" xmi:id="_6MBV4I8wEeaTqLu3B-kBVA" general="_ntiTQI8uEeaTqLu3B-kBVA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_G2bHwI84EeaTqLu3B-kBVA" name="cardShown" visibility="private" type="_O9UmII8nEeaTqLu3B-kBVA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OvIJYI84EeaTqLu3B-kBVA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OvKloI84EeaTqLu3B-kBVA" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_vP7bwI8wEeaTqLu3B-kBVA" name="EndTurn">
+    <generalization xmi:type="uml:Generalization" xmi:id="_6mpcYI8wEeaTqLu3B-kBVA" general="_ntiTQI8uEeaTqLu3B-kBVA"/>
+  </packagedElement>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_ZiLMUI8kEeaTqLu3B-kBVA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ZiTIII8kEeaTqLu3B-kBVA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/PapyrusJava/1#/"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://PapyrusJava_PROFILES/PapyrusJava.profile.uml#_j9REUByGEduN1bTiWJ0lyw"/>
+  </profileApplication>
+</uml:Model>
